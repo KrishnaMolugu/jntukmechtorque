@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Torque 19</title>
+    <link href="https://fonts.googleapis.com/css?family=Fredoka+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="particles.js"></script>
+    <script type="text/javascript">    
+    particlesJS.load('virat', 'particlesjs.json');
+    console.log(window.innerHeight,window.innerWidth);
+    window.onload = function(){
+            
+            if (window.innerWidth < 768) {
+            var c = document.getElementsByClassName("particles-js-canvas-el");
+            console.log(c[0]);
+            c[0].setAttribute("width", window.innerWidth); c[0].setAttribute("height", window.innerHeight);
+        
+            var d = document.getElementsByClassName("image");
+            console.log(d);
+            d[0].setAttribute("width", window.innerWidth); d[0].setAttribute("height", window.innerHeight);
+            console.log(window.innerHeight, window.innerWidth);
+        }    
+
+    }
+
+    </script>
+   
+</head>
+
+<body>
+    
+    <div class="image"id="virat" >
+        <img src="./photo/p1.png" alt="circlemain" class="circle">
+        <div class="dna">
+                <div class="circle1"> 
+                        <div id="rings">
+                                <div id="first-ring">
+                                    <div id="second-ring">
+                                        <div id="third-ring">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div id="ring-content">
+                                    <div class="container active" data-index="1">
+                                        <a href="events/eventspage.html"><div class="value1">Events</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                 </div>   
+        </div>
+        <div class="dna1">
+                <div class="circle3"> 
+                        <div id="rings">
+                                <div id="first-ring">
+                                    <div id="second-ring">
+                                        <div id="third-ring">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div id="ring-content">
+                                    <div class="container active" data-index="1">
+                                        <a href="workshops/workshops.html"><div class="value3">Workshops</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                 </div>   
+        </div>
+        <div class="dna2">
+                <div class="circle4"> 
+                        <div id="rings">
+                                <div id="first-ring">
+                                    <div id="second-ring">
+                                        <div id="third-ring">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div id="ring-content">
+                                    <div class="container active" data-index="1">
+                                        <a href="Activities/activities.html"><div class="value4">Activities</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                 </div>   
+        </div>
+        <img src="./photo/p2.png" alt="left" class="lp">
+        <img src="./photo/p3.png" alt="right" class="rp">
+        <img src="./photo/p9.png" alt="ring" class="ring">
+        <img src="./photo/p10.png" alt="ringo" class="rino">
+        <img src="./photo/p121.png" alt="opacityring" class="opring">
+        <div class="dnat">
+                <div class="circle2"> 
+                        <div id="rings">
+                                <div id="first-ring">
+                                    <div id="second-ring">
+                                        <div id="third-ring">
+                                        </div>
+                                    </div>
+                                </div>
+                            
+                                <div id="ring-content">
+                                    <div class="container active" data-index="1">
+                                        <a href="aboutus/about_us.html"><div class="value2">About us</div></a>
+                                    </div>
+                                </div>
+                            </div>
+                 </div>   
+
+        
+        </div>
+        
+        <img src="./photo/text.png" alt="text" class="tet">
+        <div class="dropdown">
+            <button class="dropbtn">Menu 
+              <i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="events/eventspage.html">Events</a>
+              <a href="workshops/workshops.html">Workshops</a>
+              <a href="Activities/activities.html">Activities</a>
+              <a href="aboutus/about_us.html">About us</a>
+            </div>
+          </div> 
+          
+    </div>
+   
+</body>
+
+
+</html>

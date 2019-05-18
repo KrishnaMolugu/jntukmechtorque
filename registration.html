@@ -1,0 +1,116 @@
+<!--Registration page-->
+
+<head>
+    <title> Registration</title>
+    <link rel="icon" href="photo/Jntuk-logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            margin: 0;
+        }
+
+        video {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            min-width: 100%;
+            min-height: 100%;
+            width: auto;
+            height: auto;
+            z-index: -100;
+            transform: translateX(-50%) translateY(-50%);
+            background-size: cover;
+            transition: 1s opacity;
+        }
+
+        #container {
+            font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+            font-weight: 100;
+            background: rgba(0, 0, 0, 0.3);
+            color: white;
+            padding: 2rem;
+            width: 33%;
+            margin: 2rem;
+            font-size: 1.2rem;
+
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-transform: uppercase;
+            margin-top: 0;
+            letter-spacing: .2rem;
+        }
+
+        .ele {
+            padding-bottom: 15px;
+        }
+
+        @media screen and (max-width: 500px) {
+            #container {
+                font-family: Agenda-Light, Agenda Light, Agenda, Arial Narrow, sans-serif;
+                font-weight: 100;
+                background: rgba(0, 0, 0, 0);
+                color: white;
+                padding: 2rem;
+                width: 33%;
+                margin-left: -1.8rem;
+                font-size: 1.0rem;
+            }
+        }
+
+        @media screen and (max-device-width: 800px) {
+            html {
+                background: url(https://i.ytimg.com/vi/KZ5TedXIyzw/maxresdefault.jpg) #000 no-repeat center center fixed;
+            }
+            #bgvid {
+                width: auto;
+                height: auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <video id="bgvid" playsinline autoplay muted loop>
+        <source src="https://www.videvo.net/videvo_files/converted/2012_09/preview/hd0626.mov12855.webm" type="video/mp4">
+        <source src="https://www.videvo.net/videvo_files/converted/2012_09/preview/hd0626.mov12855.webm" type="video/webm">
+
+    </video>
+    <center>
+        <div id="container">
+            <center>
+                <h1>TORQUE 19</h1>
+            </center>
+            <div>
+                <center>
+                    <form action="cgi-bin\register.py" method="post">
+                        <div class="ele">
+                            <input type="text" placeholder="Name" name ="name">
+                        </div>
+                        <div class="ele">
+                            <input type="number" placeholder="Number" name ="number">
+                        </div>
+                        <div class="ele">
+                            <input type="email" placeholder="E-Mail" name ="email">
+                        </div>
+                        <div class="ele">
+                            <input type="text" placeholder="College" name ="college">
+                        </div>
+                        <div class="ele">
+                            <input type="text" placeholder="Branch" name ="branch">
+                        </div>
+                        <div class="ele">
+                            <input type="text" placeholder="location of college" name ="location">
+                        </div>
+                        <center>
+                            <div class="ele">
+                                <button>Register</button>
+                            </div>
+                        </center>
+                    </form>
+                </center>
+            </div>
+        </div>
+    </center>
+</body>
